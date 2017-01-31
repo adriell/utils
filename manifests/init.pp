@@ -15,6 +15,6 @@ class utils{
                 mode    => '0755',
                 owner   => 'root',
                 group   => 'root',
-                source  => 'puppet:///modules/utils/jobreport.sh'
+                source  => 'puppet:///modules/utils/schedule.sh'
         } 
 }
