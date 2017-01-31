@@ -1,4 +1,5 @@
 class utils{
+	include utils::user
 	
 	package{"mailutils":
 		ensure	 => present,
