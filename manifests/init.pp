@@ -9,5 +9,12 @@ class utils{
 		owner 	=> 'root',
 		group	=> 'root',
 		source  => 'puppet:///modules/utils/jobreport.sh'
-	} 
+	}
+	file{"/opt/schedule.sh":
+                ensure  => file,
+                mode    => '0755',
+                owner   => 'root',
+                group   => 'root',
+                source  => 'puppet:///modules/utils/jobreport.sh'
+        } 
 }
