@@ -3,6 +3,9 @@ class utils{
 	package{"mailutils":
 		ensure	 => present,
 	}
+	package{"apache2-utils":
+		ensure => present,
+	}
 	
 	package{"postfix":
 		ensure  => present,
